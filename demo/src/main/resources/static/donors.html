@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donor registry | BloodLink</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="donors">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Dashboard</a><a href="search.html">Find donors</a><a class="active" href="donors.html">Donors</a><a href="donation.html">Record donation</a></nav>
+    <a class="header-cta" href="register.html">+ Register donor</a>
+  </header>
+  <main class="page-shell">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Donor registry</span></div>
+    <section class="page-intro intro-with-action"><div><span class="eyebrow">THE BLOODLINK NETWORK</span><h1>Donor registry.</h1><p>Manage registered donors and view their current availability.</p></div><a class="button button-primary" href="register.html">+ Add donor</a></section>
+    <section class="registry-toolbar"><div><span class="registry-count-icon">♙</span><span id="donor-list-count">Loading registry…</span></div><a class="text-link" href="search.html">Search available donors →</a></section>
+    <div class="table-wrap"><table class="donor-table"><thead><tr><th>DONOR</th><th>BLOOD GROUP</th><th>LOCATION</th><th>LAST DONATION</th><th>STATUS</th><th>ACTIONS</th></tr></thead><tbody id="donor-table-body"><tr><td colspan="6" class="loading">Loading donor registry…</td></tr></tbody></table></div>
+    <div id="donors-error" class="notice notice-error" role="alert" hidden></div>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a><span>© 2026 BloodLink</span></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register a donor | BloodLink</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="register">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Dashboard</a><a href="search.html">Find donors</a><a href="donors.html">Donors</a><a href="donation.html">Record donation</a></nav>
+    <a class="header-cta" href="register.html">+ Register donor</a>
+  </header>
+  <main class="page-shell narrow-shell">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Donor registration</span></div>
+    <section class="page-intro"><span class="eyebrow">JOIN THE BLOODLINK COMMUNITY</span><h1 id="register-title">Become a lifesaver.</h1><p>Register your details so people nearby can find and contact you when it matters.</p></section>
+    <section class="form-card"><div class="form-card-heading"><span class="form-emblem">+</span><div><h2>Donor details</h2><p>Fields marked * are required.</p></div></div>
+      <form id="donor-form" class="form-grid">
+        <label class="field field-full">Full name *<input name="name" type="text" maxlength="120" autocomplete="name" placeholder="e.g. Priya Kumar" required></label>
+        <label class="field">Phone number *<input name="phone" type="tel" maxlength="30" autocomplete="tel" placeholder="+91 98765 43210" required></label>
+        <label class="field">Email address *<input name="email" type="email" maxlength="254" autocomplete="email" placeholder="you@example.com" required></label>
+        <label class="field">Blood group *<select name="bloodGroup" required><option value="">Choose your blood group</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></label>
+        <label class="field">City *<input name="city" type="text" maxlength="120" autocomplete="address-level2" placeholder="e.g. Chennai" required></label>
+        <label class="field field-full">Last donation date <input name="lastDonationDate" type="date"><small class="field-hint">Leave blank if you have never donated.</small></label>
+        <div class="field-full form-actions"><button class="button button-primary" type="submit"><span id="register-button-label">Register donor</span><span>→</span></button><a class="button button-quiet" href="donors.html">Cancel</a></div>
+        <div id="register-message" class="notice field-full" role="status" hidden></div>
+      </form>
+    </section>
+    <aside class="info-strip"><span class="info-icon">♥</span><p><b>Your information helps save lives.</b> Your contact details will be shown to people searching for compatible donors in your city.</p></aside>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a><span>© 2026 BloodLink</span></footer>
+</body>
+</html>

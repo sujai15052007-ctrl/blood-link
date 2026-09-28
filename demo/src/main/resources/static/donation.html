@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Record donation | BloodLink</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="donation">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Dashboard</a><a href="search.html">Find donors</a><a href="donors.html">Donors</a><a class="active" href="donation.html">Record donation</a></nav>
+    <a class="header-cta" href="register.html">+ Register donor</a>
+  </header>
+  <main class="page-shell narrow-shell">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Record donation</span></div>
+    <section class="page-intro"><span class="eyebrow">KEEP THE REGISTRY UP TO DATE</span><h1>Record a donation.</h1><p>Log a donor's recent donation. Their 90-day recovery period will be calculated automatically.</p></section>
+    <section class="form-card"><div class="form-card-heading"><span class="form-emblem">♥</span><div><h2>Donation details</h2><p>Select a registered donor and enter the donation date.</p></div></div>
+      <form id="donation-form" class="form-grid">
+        <label class="field field-full">Find donor *<select name="donorId" required><option value="">Loading donors…</option></select><small class="field-hint">Donors in recovery are listed too; the service will prevent an early repeat donation.</small></label>
+        <label class="field field-full">Donation date *<input name="donationDate" type="date" required></label>
+        <div class="field-full form-actions"><button class="button button-primary" type="submit">Record donation <span>→</span></button><a class="button button-quiet" href="donors.html">Cancel</a></div>
+        <div id="donation-message" class="notice field-full" role="status" hidden></div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">+</span><span>Blood<span class="brand-light">Link</span><small>DONOR REGISTRY</small></span></a><span>© 2026 BloodLink</span></footer>
+</body>
+</html>
